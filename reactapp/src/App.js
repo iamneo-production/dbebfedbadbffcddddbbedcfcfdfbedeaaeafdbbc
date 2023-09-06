@@ -25,9 +25,40 @@
 // export default App;
 
 
+// import React, { useState } from "react";
+// import Button from "./components/UI/Button/Button";
+// import Card from "./components/UI/Card/Card";
+
+// function App() {
+//   const [showResults, setShowResults] = useState(false);
+
+//   const toggleResults = () => {
+//     setShowResults(!showResults);
+//   };
+
+//   return (
+//     <div className="App">
+//       <h1>Quizz App</h1>
+//       <Button onClick={toggleResults}>
+//         {showResults ? "Start Quiz" : "Show Results"}
+//       </Button>
+//       {showResults && (
+//         <Card
+//           question="What color is are the leaves?"
+//           options={["Blue", "Red", "Yellow", "Green"]}
+//         />
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
 import React, { useState } from "react";
 import Button from "./components/UI/Button/Button";
 import Card from "./components/UI/Card/Card";
+
 
 function App() {
   const [showResults, setShowResults] = useState(false);
@@ -44,7 +75,7 @@ function App() {
       </Button>
       {showResults && (
         <Card
-          question="What color is are the leaves?"
+          question="What color are leaves?"
           options={["Blue", "Red", "Yellow", "Green"]}
         />
       )}
