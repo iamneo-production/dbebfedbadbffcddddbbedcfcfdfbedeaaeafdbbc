@@ -3,7 +3,7 @@ import App from "../App";
 import { shallow, mount } from "enzyme";
 
 
-let wrapper;
+var wrapper;
 describe('Testing App Component', () => {
     test('testcase1', () => {
         wrapper = mount(<App />);
